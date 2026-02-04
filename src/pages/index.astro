@@ -1,20 +1,61 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-// import Hero from "../components/sections/Hero.astro";
-// import About from "../components/sections/About.astro";
-// import Packages from "../components/sections/Packages.astro";
-// import Contact from "../components/sections/Contact.astro";
+import Hero from "../components/sections/Hero.astro";
+import Intro from "../components/Intro.astro";
+import About from "../components/sections/About.astro";
+import MySkills from "../components/MySkills.astro";
+import MainGoals from "../components/MainGoals.astro";
+import WebsitesGrid from "../components/WebsitesGrid.astro";
+import Packages from "../components/sections/Packages.astro";
+import Contact from "../components/sections/Contact.astro";
 import Works from "../components/sections/Works.astro";
-// import Test2 from "../components/sections/tests/Test2.astro";
-// import Test1 from "../components/sections/tests/Test1.astro";
+import Test2 from "../components/sections/tests/Test2.astro";
+import Test1 from "../components/sections/tests/Test1.astro";
+import CenterPageBanner from "../components/CenterPageBanner.astro";
+import Card from "../components/Card.astro";
+import Gallery from "../components/Gallery.astro";
+import PackageCard from "../components/PackageCard.astro";
+import ButtonProps from "../components/shared/ButtonProps.astro";
 ---
 
 <MainLayout>
-  <!-- <Hero /> -->
-  <!-- <About /> -->
-  <!-- <Packages /> -->
+  <Gallery />
+  <Hero />
+  <Intro />
+  <CenterPageBanner BannerTitle="title test testingdsgsfsdfs" />
+  <Card title="title-testing" testItem1="here is test item1" pubDate="4/5/26" />
+  <ButtonProps btn1="btn" btn1Link="" />
+  <About />
+  <MySkills />
+  <MainGoals />
+  <WebsitesGrid />
+  <Packages />
   <Works />
-  <!-- <Contact /> -->
-  <!-- <Test2 /> -->
-  <!-- <Test1 /> -->
+  <Contact />
+  <Test2 />
+  <Test1 />
+  <PackageCard
+    title="title"
+    ,
+    pkgNo="1"
+    ,
+    desc1="desc"
+    ,
+    desc2="desc2"
+    ,
+    tag1="desc2"
+    ,
+    tag2="desc2"
+    ,
+    pkgParagraph="sfsdsd"
+    ,
+    pkgLink="ssdas"
+    ,
+    sq1Img=""
+    ,
+    sq3Img=""
+    ,
+    sq3desc="sfssdsa"
+    ,
+  />
 </MainLayout>

@@ -1,0 +1,50 @@
+---
+import DynamicAbout from "./DynamicAbout.astro";
+---
+
+<div id="skills-wrapper" class="w-1/4 flex justify-center bg- my-5 p-5">
+  <div id="skills-container">
+    <h2 class="text-3xl pl-2 pb-1 mt-5">My Skills</h2>
+    <p class="text-xl pl-2 pb-1 mt-5">What I've used and ...</p>
+    <div
+      id="skills-grid"
+      class="bg grid 2xl:grid-cols-2 grid-cols-1 gap-5 text-sm"
+    >
+      <div id="skill-sq1" class="skills-sq">
+        <DynamicAbout
+          mainImg="https://logo.svgcdn.com/devicon-plain/astro-plain-wordmark.png"
+          title="React"
+          paragraph1=" "
+          paragraph2=" "
+        />
+      </div>
+
+      <div id="skill-sq2" class="skills-sq">
+        <DynamicAbout
+          mainImg="https://logo.svgcdn.com/devicon-plain/php-plain.png"
+          title="PHP"
+          paragraph1=""
+          paragraph2=""
+        />
+      </div>
+
+      <div id="skill-sq3" class="skills-sq">
+        <DynamicAbout
+          mainImg="https://logo.svgcdn.com/logos/sanity.png"
+          title="sanity"
+          paragraph1="MERN"
+          paragraph2=""
+        />
+      </div>
+
+      <div id="skill-sq4" class="skills-sq">
+        <DynamicAbout
+          mainImg="https://logo.svgcdn.com/logos/wordpress.png"
+          title="wordpress"
+          paragraph1=" "
+          paragraph2=" "
+        />
+      </div>
+    </div>
+  </div>
+</div>
