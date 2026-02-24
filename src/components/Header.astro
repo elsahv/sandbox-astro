@@ -1,23 +1,22 @@
 ---
 const links = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/#about-section" },
-  { label: "Websites", href: "/#websites-section" },
-  { label: "Packages", href: "/#packages-section" },
-  { label: "Contact", href: "/#contact-section" },
+  { label: "About", href: "/#about" },
+  { label: "Portfolio", href: "/#portfolio" },
+  { label: "Blog", href: "/#blog" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Contact", href: "/#contact" },
 ];
 ---
 
-<header
-  class="border-teal border-b-2 bg-black opacity-80 text-parchment w-[100%] pt-4"
->
+<header class="border-b border-onyx w-full pt-4 text-onyx">
   <nav class="pl-5 pr-5 pt-1 h-[100%] grid grid-cols-2 pb-3">
-    <div class="flex justify-start items-end py-3 pl-1">
+    <div class="flex justify-start items-end pl-1">
       <div id="logo" class="text-4xl font-bold">
         <a href="/">SANDBOX-astro </a>
       </div>
     </div>
-    <ul class="flex justify-end items-end text-3xl py-3">
+    <ul class="flex justify-end items-end text-3xl">
       {
         links.map((link) => (
           <a class="mx-5" href={link.href}>

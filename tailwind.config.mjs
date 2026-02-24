@@ -16,6 +16,7 @@ export default {
         test2: "lightgreen",
         teal: "teal",
         coral: "#FF7F50",
+        lightSeaGreen:"#20A39E",
       },
     },
   },

@@ -1,0 +1,25 @@
+---
+export interface Props {
+  btn1: any;
+  btn1Link: string;
+}
+
+const { btn1, btn1Link } = Astro.props as Props;
+---
+
+<div class="mb-2 pl-[70px] flex justify-center">
+  <div id="btn-container" class="bg- flex items-center space-x-3">
+    <button
+      id="dynamic-btn"
+      class="border border-black opacity-85 hover:opacity-100 px-2"
+    >
+      <a href={btn1Link}>{btn1}</a>
+    </button>
+    <button
+      id="contact-btn"
+      class="bg-teal text-white opacity-85 hover:opacity-100 px-2"
+    >
+      <a href="/#contact">contact</a>
+    </button>
+  </div>
+</div>
